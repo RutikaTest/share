@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>share links</title>
+    <!-- Facebook Open Graph meta tags -->
+<meta property="og:url" content="https://purplezone.in/"> <!-- URL of the post -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Your Post Title"> <!-- Title of the post -->
+<meta property="og:description" content="Your post description"> <!-- Description of the post -->
+<meta property="og:image" content="https://www.iamthecode.org/wp-content/uploads/2021/03/florian-olivo-4hbJ-eymZ1o-unsplash-scaled-e1616631053918.jpg"> <!-- URL of the image -->
+<meta property="og:image:width" content="1200"> <!-- Width of the image -->
+<meta property="og:image:height" content="630"> <!-- Height of the image -->
+
+<!-- Twitter meta tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@YourTwitterHandle"> <!-- Your Twitter handle -->
+<meta name="twitter:title" content="Your Post Title"> <!-- Title of the post -->
+<meta name="twitter:description" content="Your post description"> <!-- Description of the post -->
+<meta name="twitter:image" content="https://www.iamthecode.org/wp-content/uploads/2021/03/florian-olivo-4hbJ-eymZ1o-unsplash-scaled-e1616631053918.jpg"> <!-- URL of the image -->
+
+<!-- LinkedIn meta tags -->
+<meta property="og:title" content="Your Post Title"> <!-- Title of the post -->
+<meta property="og:description" content="Your post description"> <!-- Description of the post -->
+<meta property="og:image" content="https://www.iamthecode.org/wp-content/uploads/2021/03/florian-olivo-4hbJ-eymZ1o-unsplash-scaled-e1616631053918.jpg"> <!-- URL of the image -->
+<meta property="og:image:width" content="1200"> <!-- Width of the image -->
+<meta property="og:image:height" content="630"> <!-- Height of the image -->
+
+</head>
+<body>
+    <div class="blog-social-sec">
+        <a href="#"><img src="img/twitter-icon.png" alt="Twitter" id="shareBtnTwitter"></a>
+        <a href="#"><img src="img/linkedin-icon.png" alt="Linkedin" id="shareBtnLinkedIn"></a>
+        <a href="#"><img src="img/facebook-icon.png" alt="Facebook" id="shareBtnFacebook"></a>
+    </div>
+    
+    <script>
+        document.getElementById('shareBtnFacebook').addEventListener('click', function() {
+    var shareUrl = ''; // Replace this with your post URL
+    var fbShareUrl = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(shareUrl);
+    window.open(fbShareUrl, '_blank');
+});
+document.getElementById('shareBtnTwitter').addEventListener('click', function() {
+    var shareUrl = ''; // Replace this with your post URL
+    var shareText = 'Check out this awesome post!'; // Replace this with your post text
+    var twitterShareUrl = 'https://twitter.com/intent/tweet?url=' + encodeURIComponent(shareUrl) + '&text=' + encodeURIComponent(shareText);
+    window.open(twitterShareUrl, '_blank');
+});
+document.getElementById('shareBtnLinkedIn').addEventListener('click', function() {
+var shareUrl = ''; // Replace this with your post URL
+var shareTitle = 'Check out this awesome post!'; // Replace this with your post title
+var linkedInShareUrl = 'https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(shareUrl) + '&title=' + encodeURIComponent(shareTitle) ;
+window.open(linkedInShareUrl, '_blank');
+});
+    </script>
+</body>
+</html>
