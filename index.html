@@ -1,50 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta name="description"
-        content="We are a client-focused integrated advertising agency with all round artistic and design capabilities. We focus on professionalism and fulfilling commitments to create a satisfying experience. There is a constant focus on adapting new perspectives, and in this process, we help you with a successful product marketing story">
-    <meta name="robots" content="max-image-preview:large">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:site_name" content="PurpleZone -">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="PurpleZone">
-    <meta property="og:description"
-        content="We are a client-focused integrated advertising agency with all round artistic and design capabilities. We focus on professionalism and fulfilling commitments to create a satisfying experience. There is a constant focus on adapting new perspectives, and in this process, we help you with a successful product marketing story">
-    <!-- <meta property="og:url" content="https://purplezone.in/img/blog/blog-img1.jpg"> -->
-    <meta property="og:image" content="https://purplezone.in/img/blog/blog-img1.jpg">
-    <!-- <meta property="og:url" content="https://purplezone.in/"> -->
-    <meta property='og:video' content='https://purplezone.in/img/purplezone-not-about-us-but-about-you.mp4' />
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="PurpleZone">
-    <meta name="twitter:description"
-        content="We are a client-focused integrated advertising agency with all round artistic and design capabilities. We focus on professionalism and fulfilling commitments to create a satisfying experience. There is a constant focus on adapting new perspectives, and in this process, we help you with a successful product marketing story">
-
-</head>
-<body>
-    <div class="blog-social-sec">
-        <a href="#"><img src="img/twitter-icon.png" alt="Twitter" id="shareBtnTwitter"></a>
-        <a href="#"><img src="img/linkedin-icon.png" alt="Linkedin" id="shareBtnLinkedIn"></a>
-        <a href="#"><img src="img/facebook-icon.png" alt="Facebook" id="shareBtnFacebook"></a>
-    </div>
-    
-    <script>
-        document.getElementById('shareBtnFacebook').addEventListener('click', function() {
-    var shareUrl = 'https://rutikatest.github.io/share/ // Replace this with your post URL
-    var fbShareUrl = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(shareUrl);
-    window.open(fbShareUrl, '_blank');
-});
-document.getElementById('shareBtnTwitter').addEventListener('click', function() {
-    var shareUrl = 'https://rutikatest.github.io/share/'; // Replace this with your post URL
-    var shareText = 'Check out this awesome post!'; // Replace this with your post text
-    var twitterShareUrl = 'https://twitter.com/intent/tweet?url=' + encodeURIComponent(shareUrl) + '&text=' + encodeURIComponent(shareText);
-    window.open(twitterShareUrl, '_blank');
-});
-document.getElementById('shareBtnLinkedIn').addEventListener('click', function() {
-var shareUrl = 'https://rutikatest.github.io/share/'; // Replace this with your post URL
-var shareTitle = 'Check out this awesome post!'; // Replace this with your post title
-var linkedInShareUrl = 'https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(shareUrl) + '&title=' + encodeURIComponent(shareTitle) ;
-window.open(linkedInShareUrl, '_blank');
-});
-    </script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
